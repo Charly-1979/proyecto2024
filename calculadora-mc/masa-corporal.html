@@ -1,0 +1,29 @@
+<!--Calculadora de masa corporal-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora-masa</title>
+    <link rel="stylesheet" type="text/css" href="calcu.css">
+</head>
+    <body>
+        <div class="calculadora">
+            <h2 id="subtitulo1">CALCULA TU INDICE DE MASA CORPORAL</h2>
+            <div class="elementos1">
+                
+                <form id="inputs">
+                    <input type="text" placeholder="PESO EN (KG)" id="t1">
+                    <input type="text" placeholder="ALTURA (EN MTS)"id="t2">
+                    <input type="text" placeholder="RESULTADOS DE TU IMC" id="t3">
+                    <input type="text" placeholder="PESO"id="t4">
+                </form>
+                <div id="botones">
+                    <button id="boton1" type="submit" onclick="calcu()">CALCULAR IMC</button>
+                    <button id="boton2" type="submit" onclick="calcu3()">NUEVO CALCULO</button>
+                </div>
+            </div>
+        </div>
+        <script src="calculos.js"></script>
+    </body>
+</html>

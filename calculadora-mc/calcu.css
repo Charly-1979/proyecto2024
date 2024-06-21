@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.calculadora{
+    position:absolute;
+    height: 100vh;
+    width: 85vh;
+    border-style: solid;
+    background-color: blanchedalmond;
+}
+#inputs{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 10vh;
+    width: 50vh;
+    align-items:end;
+    margin-top: 15vh;
+}
+#inputs input {
+    margin-bottom: 10px; /* Espacio entre los inputs */
+    padding: 10px; /* Añade relleno interno */
+    border: 1px solid #d11313; /* Añade un borde */
+    border-radius: 5px; /* Redondea las esquinas */
+    box-sizing: border-box; /* Incluye el padding y el border en el tamaño total */
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#botones{
+    top:60vh;
+    position: relative;
+    display: block;
+    left:20vh;
+    
+    
+}
+#boton1{
+    position:relative;
+    left:-10vh;
+    height:10vh;
+    width: 20vh;
+    background-color: black;
+    color:#d11313
+}
+#boton2{
+    position: relative;
+    left:3vh;
+    height:10vh;
+    width:21vh;
+    background-color: black;
+    color:#d11313
+}
+#subtitulo1{
+    position: absolute;
+    background-color: chartreuse;
+    border-radius: 5vh;
+    margin: 1vh;
+    padding: 1vh;
+    margin-bottom: 1vh;
+}
+#t4{
+    position: absolute;
+    height:10vh;
+    top:35vh;
+    font-size: x-large;
+    left:14vh;
+    font-style: italic;
+    font-family:fantasy;
+    color:black;
+    background-color: lime;
+
+}
+#t4:hover{
+    background-color: #d11313;
+}
+#t3{
+    background-color: aquamarine;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable Horizontal</title>
+    <link rel="stylesheet" type="text/css" href="fat.css">
+    
+</head>
+
+
+
+<body>
+    
+    
+    <div class="form1">
+      <h1 id="titulo1">
+        CALCULA  TU PORCENTAJE DE GRASA <br>CORPORAL  FAT
+      </h1>
+      <img src="el.jpg" id="imel" onclick="activarEnlacefat()">
+      <img src="el.jpg" id="imel2">
+      <img src="ella.jpg" id="imella"onclick="activarEnlacefat2()">
+      <img src="ella.jpg" id="imella2">
+      <form id="formulario1">
+          <input type="text" id="t1" placeholder="Introduce tu nombre" class="bordes">
+          <input type="text" id="t2" placeholder="introduce circ. de cintura"class="bordes">
+          <input type="text" id="t3" placeholder="Introduce circ. de cuello"class="bordes">
+          <input type="text" id="t4" placeholder="Introduce estatura"class="bordes">
+          <input type="text" id="t5" placeholder="Introduce cadera"class="bordes">
+          <textarea id="t6" placeholder="RESULTADOS" readonly></textarea>
+          
+        </form>
+        <br><button id="boto1" type="button" onclick="grasac()">Verificación</button>
+        <button id="boto2" type="button" onclick="activarEnlacefat3()">Regresar</button>
+      </div>
+  <!--
+    <div class="opciones">
+    <label><input type="checkbox" id="cas1" value="first_checkbox" /> ERES HOMBRE </label><br />
+    <input type="checkbox" id="cas2" value="second_checkbox" /> <label for="cbox2">ERES MUJER</label><br/>
+    
+    </div>
+  -->
+  
+    <script src="fat.js"></script>
+    
+</body>
+  
+</html>
