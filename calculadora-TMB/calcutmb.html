@@ -1,0 +1,56 @@
+<!--CALCULADORA DE TASA METABOLICA BASAL-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable Horizontal</title>
+    <link rel="stylesheet" type="text/css" href="TMB.css">
+    
+</head>
+    
+<body>
+   
+    <div class="calcu2">
+       
+        <h2 id="subtitulo1">CALCULA TU TASA METABOLICA BASAL</h2>
+        
+        <div class="titulos">  
+            <h2 id="peso">PESO (EN KG)</h2>
+            <h2 id="altura">ALTURA (EN CM)</h2>
+            <h2 id="edad">EDAD</h2>
+        </div>
+
+        <div class="elementos1">
+            
+            <!--<img src="nitragreenapple.png" id="nitraapple2"> 
+            <img src="watermelon.png" id="nitraapple3"> -->   
+            <form id="formulario1">
+                
+                <input type="text" id="t1"placeholder="Introduce tu peso">
+                <input type="text" id="t2"placeholder="Introduce tu estatura">
+                <input type="text" id="d3"placeholder="Introduce tu edad">
+                <input type="text" id="t4" placeholder="RESULTADOS">
+            </form>
+                <br><button id="boton1" type="submit" onclick="calcu()">verificacion</button>
+                <button id="boton2" type="submit" onclick="calcu2()">regresar</button>
+        </div>
+           
+    
+        <div class="opciones">
+            <label><input type="checkbox" id="cas1" value="first_checkbox" /> ERES HOMBRE </label><br />
+            <input type="checkbox" id="cas2" value="second_checkbox" /> <label for="cbox2">ERES MUJER</label><br/>
+            <h5 id="actividad">NIVEL DE ACTIVIDAD FISICA</h5>
+            <select id="sele1" name="ACTIVIDAD">
+                <option value="0">POCO O NINGUN EJERCICIO </option>
+                <option value="1">1 A 3 DIAS POR SEMANA </option>
+                <option value="2">3 a 5 DIAS POR SEMANA </option>
+                <option value="3">6 a 7 DIAS POR SEMANA </option>
+                <option value="4">MUY FUERTE 2 VECES DIA</option>
+            </select>
+        </div>
+    </div>
+    <script src="TMB.js"></script>
+    
+</body>
+</html>
