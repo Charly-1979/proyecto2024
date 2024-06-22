@@ -21,10 +21,10 @@ function mostrarRegistros(){
 }
 function buscarRegistros(){
     
-   let id=parseInt(document.getElementById("t6").value);
+   document.getElementById("t6").value;
    let encontrado = false;
     for(let i=0; i < registros.length; i++ ){
-        if (i === id){
+        if (i === "t6"){
             encontrado = true;
             break; // Salir del bucle una vez que se encuentre el registro
         }
