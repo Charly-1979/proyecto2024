@@ -24,6 +24,7 @@ function buscarRegistros(){
    let id1=parseInt(document.getElementById("t6").value);
     alert("inicia el ciclo");
       for(let i=0; i < registros.length; i++){
+        alert("se recorrio el for");
        if( i===id1){
            alert("registro encontrado");
            break;
