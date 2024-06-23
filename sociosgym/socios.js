@@ -1,7 +1,7 @@
 const registros=[];
 
 function guardarRegistros(){
-   let id=document.getElementById("t1").value;
+   let id=(document.getElementById("t1").value);
    let nombre=document.getElementById("t2").value;
    let edad=document.getElementById("t3").value;
    let direccion=document.getElementById("t4").value;
@@ -20,21 +20,28 @@ function mostrarRegistros(){
     console.log(registros);
 }
 function buscarRegistros(){
-   
-   let id1=parseInt(document.getElementById("t6").value);
+   encontrado=false;
+   let id1=(document.getElementById("t6").value);
     alert("inicia el ciclo");
       for(let i=0; i < registros.length; i++){
-        alert("se recorrio el for");
-       if( i===id1){
-           alert("registro encontrado");
-           break;
-       }else{
+        
+        if (registros[i].id === id1) { // Compara con id1
+            encontrado = true;
+            alert("Registro encontrado");
+            let registro=registros[i];
+            alert("ID: " + registro.id + ", Nombre: " + registro.nombre + ", Edad: " + registro.edad + ", Dirección: " + registro.direccion + ", Email: " + registro.email);
+            break;
+        
+      }else{
            alert("registro no encontrado");
+           break
+      }
+    }
+}
           
-       }
+
        
-     }
-   }
+  
 
 function limpiar(){
     document.getElementById("t1").value="";
