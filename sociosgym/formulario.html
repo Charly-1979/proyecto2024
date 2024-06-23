@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable Horizontal</title>
+    <link rel="stylesheet" type="text/css" href="socios.css">
+    
+</head>
+
+
+
+<body>
+    
+    
+    <div class="form1">
+      <img src="banerchar.png" id="img1">
+      <h1 id="titulo1">
+        REGISTRO NUEVO SOCIO <br>
+      </h1>
+        <form id="formulario1">
+          <input type="text" id="t1" placeholder="ID" class="bordes">
+        
+          <input type="text" id="t2" placeholder="nombre"class="bordes">
+          <input type="text" id="t3" placeholder="edad"class="bordes">
+          <input type="text" id="t4" placeholder="direccion"class="bordes">
+          <input type="text" id="t5" placeholder="email"class="bordes">
+          
+          <input type="text" id="t6"  placeholder="BUSCAR ID">
+          
+        </form>
+        <br><button id="boto1" type="button" onclick="guardarRegistros()">GUARDAR</button>
+        <button id="boto2" type="button" onclick="mostrarRegistros()">MOSTRAR</button>
+        <button id="boto3" type="button" onclick="limpiar()">LIMPIAR</button>
+        <button id="boto4" type="button" onclick="buscarRegistros()">BUSCAR</button>
+      </div>
+  <!--
+    <div class="opciones">
+    <label><input type="checkbox" id="cas1" value="first_checkbox" /> ERES HOMBRE </label><br />
+    <input type="checkbox" id="cas2" value="second_checkbox" /> <label for="cbox2">ERES MUJER</label><br/>
+    
+    </div>
+  -->
+  
+    <script src="socios.js"></script>
+    
+</body>
+  
+</html>
